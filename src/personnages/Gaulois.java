@@ -38,5 +38,15 @@ public class Gaulois {
 		Gaulois asterix = new Gaulois("Astérix", 8);
 		System.out.println(asterix);
 		System.out.println("Nom du gaulois : " + asterix.getNom());
+		
+		// Vérification de la méthode prendreParole via parler
+        System.out.println("\nTest de la méthode parler (qui utilise prendreParole) :");
+        asterix.parler("Je suis prêt pour l'aventure !");
+        
+        // Création d'un Romain pour tester la méthode frapper
+        Romain cesar = new Romain("César", 10);
+        
+        System.out.println("\nTest de la méthode frapper :");
+        asterix.frapper(cesar);
 	}
 }
