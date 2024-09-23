@@ -41,7 +41,7 @@ public class Gaulois {
     }
 
     public static void main(String[] args) {
-        // Création du gaulois Astérix
+        /*// Création du gaulois Astérix
         Gaulois asterix = new Gaulois("Astérix", 8);
         System.out.println(asterix);
         System.out.println("Nom du gaulois : " + asterix.getNom());
@@ -62,6 +62,7 @@ public class Gaulois {
 
         System.out.println("\nTest de la méthode frapper après avoir bu la potion :");
         asterix.frapper(cesar);  // Maintenant Astérix frappe avec l'effet de la potion
+    }*/
     }
 }
 
