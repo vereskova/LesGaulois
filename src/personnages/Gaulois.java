@@ -1,4 +1,6 @@
 package personnages;
+import villagegaulois.Musee;
+import villagegaulois.Trophee;
 
 public class Gaulois {
 
@@ -16,7 +18,23 @@ public class Gaulois {
 	public String getNom() {
 		return nom;
 	}
-
+	
+	
+	public void faireUneDonnation(Musee musee) {
+        if (nb_trophees > 0) {
+            System.out.println("Le gaulois " + nom + " : « Je donne au musée tous mes trophées :");
+            for (int i = 0; i < nb_trophees; i++) {
+                System.out.println("- " + trophees[i].getEquipement());
+                musee.donnerTrophee(this, trophees[i].getEquipement());
+            }
+            nb_trophees = 0;
+        } else {
+            System.out.println("Le gaulois " + nom + " n'a pas de trophées à donner.");
+        }
+    }
+	
+	
+	
 	public void parler(String texte) {
 		System.out.println(prendreParole() + "\"" + texte + "\"");
 	}
